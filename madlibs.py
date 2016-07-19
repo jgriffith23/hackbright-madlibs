@@ -31,12 +31,21 @@ def greet_person():
     """Greet user."""
 
     player = request.args.get("person")
-
     compliment = choice(AWESOMENESS)
 
     return render_template("compliment.html",
                            person=player,
                            compliment=compliment)
+
+@app.route('/game')
+def show_madlib_form():
+    """Shows a madlib form to user."""
+    answer = request.args.get("yesno")
+
+    if answer == "yes":
+        return render_template("game.html")
+    else:
+        return render_template("goodbye.html")
 
 
 if __name__ == '__main__':
