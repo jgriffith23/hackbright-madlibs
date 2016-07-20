@@ -1,0 +1,24 @@
+body{
+    font-family: sans-serif;
+    background-color: #e6f2ff;
+}
+
+h1 {
+    color: #99ccff
+}
+
+form {
+    font-size: 18px;
+}
+
+input[type="text"] {
+    height: 25px;
+}
+
+#submit-name {
+    border: groove 3px #006fe6;
+    background-color: #4da3ff;
+    color: #e6f2ff;
+    font-size: 18px;
+}
+
