@@ -1,10 +1,7 @@
-<!doctype html>
-<html>
-<head>
-    <title> Madlibs Game </title>
-    <link rel="stylesheet" type="text/css" href="/static/madlibs.css">
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title%}Madlibs Game{% endblock %}
+
+{% block body_content %}
     <form action='/madlib'>
         Welcome to Madlibs! To play, please provide us with a person, color, noun and adjective.
         <br>
@@ -51,5 +48,4 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="submit" value="Show me the Mad Lib">
     </form>
-</body>
-</html>
+{% endblock %}

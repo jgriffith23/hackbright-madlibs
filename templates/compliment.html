@@ -1,17 +1,12 @@
-<!doctype html>
-<html>
-<head>
-  <title>A Compliment</title>
-  <link rel="stylesheet" type="text/css" href="/static/madlibs.css">
-</head>
-<body>
-    Hi {{ person }}! I think you're {{ compliment }}!
+{% extends 'base.html' %}
+{% block title%}A Compliment{% endblock %}
 
+{% block body_content %}
+Hi {{ person }}! I think you're {{ compliment }}!
     <form action="/game">
         Would you like to play a game? 
         <input type="radio" name="yesno" value="yes">Yes                                
         <input type="radio" name="yesno" value="no">No
         <input type="submit" value="Submit">
     </form>
-</body>
-</html>
+{% endblock %}
