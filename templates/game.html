@@ -2,17 +2,19 @@
 <html>
 <head>
     <title> Madlibs Game </title>
+    <link rel="stylesheet" type="text/css" href="/static/madlibs.css">
 </head>
 <body>
     <form action='/madlib'>
         Welcome to Madlibs! To play, please provide us with a person, color, noun and adjective.
         <br>
         <br>
-        <label for="field-person"> Person:
+        <label for="field-person"> Person:&nbsp;&nbsp;&nbsp;
         <input type="text" name="person">
         </label>
         <br>
-        <label for="field-color"> Color: 
+        <br>
+        <label for="field-color"> Color: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <select name="color"> 
             <option value="fire-engine-red">Red</option>
             <option value="periwinkle">Periwinkle</option>
@@ -25,7 +27,8 @@
         </select>
         </label>
         <br>
-        <label for="field-noun"> Noun:
+        <br>
+        <label for="field-noun"> Noun:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <select name="noun"> 
             <option value="unicorn">unicorn</option>
             <option value="spoon">spoon</option>
@@ -37,12 +40,15 @@
             <option value="cooler">cooler</option>
         </select>
         <br>
+        <br>
         </label>
         <label for="field-adjective"> Adjective:
         <input type="text" name="adjective">
         </label>
         <br>
         <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="submit" value="Show me the Mad Lib">
     </form>
 </body>

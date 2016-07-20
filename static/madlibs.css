@@ -1,5 +1,6 @@
 body{
     font-family: sans-serif;
+    font-size: 18px;
     background-color: #e6f2ff;
 }
 
@@ -15,10 +16,18 @@ input[type="text"] {
     height: 25px;
 }
 
-#submit-name {
+input[type="submit"] {
     border: groove 3px #006fe6;
     background-color: #4da3ff;
     color: #e6f2ff;
     font-size: 18px;
+}
+
+select {
+    border: groove 3px #006fe6;
+    background-color: #4da3ff;
+    color: #e6f2ff;
+    font-size: 18px;
+    /*height: 25px;*/
 }
 

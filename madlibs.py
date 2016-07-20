@@ -11,6 +11,7 @@ AWESOMENESS = [
     'awesome', 'terrific', 'fantastic', 'neato', 'fantabulous', 'wowza', 'oh-so-not-meh',
     'brilliant', 'ducky', 'coolio', 'incredible', 'wonderful', 'smashing', 'lovely']
 
+MADLIBS = ['madlib.html','madlib2.html']
 
 @app.route('/')
 def start_here():
@@ -56,7 +57,7 @@ def show_madlib():
     player_adjective = request.args.get("adjective")
     player_noun = request.args.get("noun")
 
-    return render_template("madlib.html",
+    return render_template(choice(MADLIBS),
                            person=player_person, 
                            color=player_color, 
                            adjective=player_adjective, 
